@@ -13,6 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "docker:build": "docker build -t reactdockerexample .",
+    "docker:run": "docker run -p 3000:80 -d reactdockerexample:latest",
+    "docker:remove": "docker rm -f",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
