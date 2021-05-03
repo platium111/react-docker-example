@@ -28,7 +28,7 @@ docker run -d --publish 8888:5000 reactdockerexample
 
 aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 189705706301.dkr.ecr.ap-southeast-2.amazonaws.com
 docker build -t react-docker-example .
-docker tag reactdockerexample:latest 189705706301.dkr.ecr.ap-southeast-2.amazonaws.com/react-docker-example:latest
+docker tag react-docker-example:latest 189705706301.dkr.ecr.ap-southeast-2.amazonaws.com/react-docker-example:latest
 docker push 189705706301.dkr.ecr.ap-southeast-2.amazonaws.com/react-docker-example:latest
 
 SUCCESS deploy react docker app to ECS | https://www.linkedin.com/pulse/deploy-your-react-app-ecsfargate-sourav-sutradhar/?trk=read_related_article-card_title
@@ -38,3 +38,4 @@ VPC when config load balancer
 
 pipeline
 arn:aws:iam::189705706301:role/service-role/codebuild-react-docker-example-service-role
+AWSCodePipelineServiceRole-ap-southeast-2-react-docker-deploy-p
